@@ -11,13 +11,13 @@ export const html = () => {
                 message: "Error: <%= error.message %>"
             }))
         )
-        //.pipe(fileInclude())
-        .pipe(pug({
-            //Сжатие HTML файла
-            pretty: true,
-            //Показывать в терминале какой файл обработан
-            verbose: true
-        }))
+        .pipe(fileInclude())//html
+        // .pipe(pug({
+        //     //Сжатие HTML файла
+        //     pretty: true,
+        //     //Показывать в терминале какой файл обработан
+        //     verbose: true
+        // }))
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
         .pipe(
             app.plugins.if (
