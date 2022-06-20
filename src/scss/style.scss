@@ -1,5 +1,7 @@
 @import "fonts";
 @import "nullstyle";
+@import "footer";
+@import "header";
 
 html, body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -14,7 +16,6 @@ html, body {
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 320px;
 }
 main {
     flex: 1 0 auto;

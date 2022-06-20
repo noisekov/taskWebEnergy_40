@@ -1,0 +1,14 @@
+.header {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        &__phone-block{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-down {
+        background: #F2F2F2;
+    }
+}
+

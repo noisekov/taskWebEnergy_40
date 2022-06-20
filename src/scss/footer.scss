@@ -1,0 +1,44 @@
+.footer {
+    background: #F9F9FA;
+    &-top{
+        padding: 52px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        &__link-block {
+            display: flex;
+            flex-direction: column;
+        }
+        // .footer-top__nav
+        &__nav {
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+        .phone {
+        }
+        .social-link {
+        }
+        .download-price {
+        }
+        .subscribe {
+            display: flex;
+            flex-direction: column;
+        }        
+    }
+    &-down{
+        padding: 30px 0 38px 0;
+        // .header-down__title
+            &__title {
+                line-height: 130%;
+                display: flex;
+                color: #000000;
+                margin-bottom: 8px;
+            }
+            // .header-down__subtitle
+            &__subtitle {
+                font-weight: 300;
+                line-height: 130%;
+                color: #52575C;
+            }
+    }
+}
+
