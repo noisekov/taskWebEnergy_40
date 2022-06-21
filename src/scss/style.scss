@@ -23,6 +23,7 @@ main {
 .footer {
     flex: 0 1 auto;
 }
+//nav-page
 .nav-page__shop {
     padding: 39px 50px 50px 50px;
     & ul {
@@ -44,6 +45,9 @@ main {
         }
     }
 }
+
+
+//category
 h1 {
     font-size: 32px;
     line-height: 130%;
@@ -53,6 +57,7 @@ h1 {
     margin-bottom: 30px;
 }
 .category {
+    margin-bottom: 2px;
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -63,32 +68,53 @@ h1 {
             border: 1px solid #CACCCF;
             border-radius: 2px;
             margin-bottom: 8px;
+            cursor: pointer;
             &:last-child {
                 margin-right: 0;
-                background: #FFFFFF;
-                border: 1px solid #E93C3C;
             }
             &:hover{
                 background: #E93C3C;
                 border-radius: 2px;
+                & a {
+                    color: #FFFFFF;
+                }
             }
         }
         & a {
             font-size: 12px;
             line-height: 14px;
             color: #52575C;
-            &:hover{
-                color: #FFFFFF;
-            }
         }
         & button {
-            background: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 12px;
-            line-height: 14px;
+            line-height: 16px;
+            height: 34px;
+            padding: 0 8px;
             color: #52575C;
+            border-radius: 2px;
+            background: #FFFFFF;
+            border: 1px solid #E93C3C;
             &:hover {
                 color: #E93C3C;
             }
         };
+    }
+}
+// filter-price
+.filter-price {
+    text-align: end;
+    margin-bottom: 20px;
+    & li {
+        line-height: 130%;
+        color: #52575C;
+        & a {
+            color: #52575C;
+            & img {
+                padding-left: 8px;
+            }
+        }
     }
 }
