@@ -1,19 +1,23 @@
 <header>
-    <div class="header container">
-        <div class="header-top ">
+    <div class="header ">
+        <div class="header-top container">
             <a href="#"><img src="/img/logo.svg" alt=""></a>
-            <div class="header-top__choose-city">
+            <div class="header-top__choose">
                 <p>Выберите ваш город:</p>
-                <ul>
-                    <li><a href="#">Санкт-Петербург</a>
-                        <img src="" alt="">
-                    </li>
-                </ul>
+                <div class="header-top__choose-city">
+                    <img src="/img/map pin.svg" alt="locate">
+                    <ul>
+                        <li><a href="#">Санкт-Петербург</a></li>
+                    </ul>
+                </div>
             </div>
-            <label for="">
-                <input type="text">
-                <a href=""><img src="" alt=""></a>
-            </label>
+            <div class="header-top__input">
+                <label for="">
+                    <label for="main-search"></label>
+                    <input type="text" id="main-search" class="header-top__input-search" placeholder="Поиск">
+                    <button class="header-top__input-icon"><img src="/img/search.svg" alt="search"></button>
+                </label>
+            </div>
             <div class="working-mode">
                 <p>Режим работы<br>Пн-Пт с 8:00 — 18:00</p>
             </div>
@@ -33,10 +37,38 @@
                 <span><a href="tel:+7 (495) 600-4400">Заказать звонок</a></span>
             </div>
         </div>
-        <div class="header-down">
-            <nav class="header-down__nav">
-                
-            </nav>
-        </div>
+            <div class="wrapper__header-down">
+                <div class="header-down container">
+                    <nav class="header-down__nav">
+                        <a href="#" class="header-down__nav-catalog">Каталог</a>
+                            <span class="burger">
+                                <a href="#"><img src="/img/burger.png" alt="burger"></a>
+                            </span>
+                        <ul class="header-down__nav-list">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Скидки</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Дилеры</a></li>
+                            <li><a href="#">Магазины</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#" class="header-down__nav-list_honest">Честный знак</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header-down__sign">
+                        <li>
+                            <a href="#"><img src="/img/favourite.svg" alt="like"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/shop.svg" alt="shop"></a>
+                        </li>
+                        <li>
+                            <img src="/img/user.svg" alt="user">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </div>
 </header>

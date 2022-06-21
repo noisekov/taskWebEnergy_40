@@ -2,7 +2,6 @@
 @import "nullstyle";
 @import "footer";
 @import "header";
-
 html, body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
@@ -14,12 +13,82 @@ html, body {
     min-height: 100%;
 }
 .container {
-    max-width: 1920px;
+    max-width: 1380px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 main {
     flex: 1 0 auto;
 }
 .footer {
     flex: 0 1 auto;
+}
+.nav-page__shop {
+    padding: 39px 50px 50px 50px;
+    & ul {
+        display: flex;
+        align-items: center;
+    }
+    & li {
+        margin-right: 6px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    & a {
+        line-height: 130%;
+        color: #828282;
+        &:hover {
+            border-bottom: 1px solid #828282;
+            opacity: 0.9;
+        }
+    }
+}
+h1 {
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: start;
+    color: #25282B;
+    margin-bottom: 30px;
+}
+.category {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            margin-right: 8px;
+            padding: 8.5px 8px;
+            background: #F9F9FA;
+            border: 1px solid #CACCCF;
+            border-radius: 2px;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-right: 0;
+                background: #FFFFFF;
+                border: 1px solid #E93C3C;
+            }
+            &:hover{
+                background: #E93C3C;
+                border-radius: 2px;
+            }
+        }
+        & a {
+            font-size: 12px;
+            line-height: 14px;
+            color: #52575C;
+            &:hover{
+                color: #FFFFFF;
+            }
+        }
+        & button {
+            background: #FFFFFF;
+            font-size: 12px;
+            line-height: 14px;
+            color: #52575C;
+            &:hover {
+                color: #E93C3C;
+            }
+        };
+    }
 }

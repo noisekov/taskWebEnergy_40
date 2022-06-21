@@ -2,10 +2,10 @@
     <div class="footer container">
         <div class="footer-top">
             <div class="footer-top__link-block">
-                <span class="phone">+7 (495) 777-2345</span>
-                <span><a href="tel:+7 (495) 777-2345">Заказать звонок</a></span>
-                <span>info@planeta-sirius.ru</span>
-                <div class="social-link">
+                <span class="footer-top__link-block-phone">+7 (495) 777-2345</span>
+                <span class="footer-top__link-block-order"><a href="tel:+7 (495) 777-2345">Заказать звонок</a></span>
+                <span class="footer-top__link-block-email">info@planeta-sirius.ru</span>
+                <div class="social-link mb32">
                     <a href="#"><img src="/img/social-link/facebook.svg" alt="facebook"></a>
                     <a href="#"><img src="/img/social-link/instagram.svg" alt="instagram"></a>
                     <a href="#"><img src="/img/social-link/vk.svg" alt="vk"></a>
@@ -17,30 +17,35 @@
             </div>
             <nav class="footer-top__nav">
                 <ul>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">Спецодежда</a></li>
-                    <li><a href="">Средства защиты рук</a></li>
-                    <li><a href="">Активный отдых</a></li>
-                    <li><a href="">Хозтовары и постельные<br> принадлежности</a></li>
-                    <li><a href="">Ликвидация</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Спецодежда</a></li>
+                    <li><a href="#">Средства защиты рук</a></li>
+                    <li><a href="#">Активный отдых</a></li>
+                    <li><a href="#">Хозтовары и постельные<br> принадлежности</a></li>
+                    <li><a href="#" class="footer-top__nav_liquidation">Ликвидация</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Обувь</a></li>
-                    <li><a href="">Средства <br> индивидуальной защиты</a></li>
-                    <li><a href="">Жилеты на все случаи <br> жизни</a></li>
-                    <li><a href="">Линия Plus</a></li>
+                    <li><a href="#">Обувь</a></li>
+                    <li><a href="#">Средства <br> индивидуальной защиты</a></li>
+                    <li><a href="#">Жилеты на все случаи <br> жизни</a></li>
+                    <li><a href="#">Линия Plus</a></li>
                 </ul>
             </nav>
             <div class="subscribe">
                 <p>Подпишитесь на новости и акции и будьте в курсе всего!</p>
-                <label for="subcribe">
-                    <input type="text" id="subcribe"> 
-                    <a href="#"><img src="/img/send.svg" alt=""></a>
-                </label>
-                <label for="allow">
-                    <input type="checkbox" id="allow">
-                    Я даю согласие на обработку персональных данных и соглашаюсь с правилами обработки персональных данных.
-                </label>
+                <div class="subscribe">
+                    <form action="">
+                        <label for="subcribe" class="subscribe-label"><button class="subscribe-button"><img src="/img/send.svg" alt="send"></button></label>
+                        <input type="text" placeholder="Введите свой e-mail" id="subcribe" class="subscribe-input"> 
+                    </form>
+                </div>
+                <div class="allow">
+                    <form action="">
+                        <input type="checkbox" id="allow">
+                        <label for="allow">Я даю согласие на обработку персональных данных и соглашаюсь с правилами обработки персональных данных.</label>
+                    </form> 
+                </div>
+
             </div>
         </div>
         <div class="footer-down">
