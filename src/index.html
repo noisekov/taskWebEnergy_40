@@ -9,8 +9,8 @@
             <section>
                 <nav class="nav-page__shop container">
                     <ul>
-                        <li><a href="#">Каталог товаров ></a></li>
-                        <li><a href="#">Спецодежда ></a></li>
+                        <li><a href="#">Каталог товаров</a> ></li>
+                        <li><a href="#">Спецодежда</a> ></li>
                         <li><a href="#">Спецодежда зимняя</a></li>
                     </ul>
                 </nav>
@@ -41,13 +41,27 @@
                 <div class="filter-price container">
                     <ul>
                         <li class="filter-price__icon">
-                            <a href="#">По возрастанию цены<img src="/img/down.svg" alt="down"></a>
+                            <a href="#">По возрастанию цены</a>
+                            <img src="/img/down.svg" alt="down">
                         </li>
+                        <li><a href="#">По умолчанию</a></li>
+                        <li><a href="#">По популярности</a></li>
+                        <li><a href="#">По возрастанию цены</a></li>
+                        <li><a href="#">По убыванию цены</a></li>
+                        <li><a href="#">По новинкам</a></li>
+                        <li><a href="#">По скидке</a></li>
+                        <li><a href="#">По алфавиту</a></li>
                     </ul>
                 </div>
             </section>
             <main class="main container">
-                TYT BYDET CHOTA
+                @@include('html/aside.html', {})
+                <section class="selling">
+                    <div class="selling-block">
+                        <img src="" alt="">
+                        
+                    </div>
+                </section>
             </main>
             @@include('html/footer.html', {})
         </div>
