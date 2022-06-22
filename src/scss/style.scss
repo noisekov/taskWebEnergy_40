@@ -17,6 +17,9 @@ html, body {
     max-width: 1380px;
     margin: 0 auto;
     padding: 0 50px;
+    @media (max-width:550px) {
+        padding: 0 10px;
+    }
 }
 main {
     flex: 1 0 auto;
@@ -108,7 +111,6 @@ h1 {
     display: flex;
     justify-content: end;
     margin-bottom: 20px;
-
     & ul {
         position: absolute;
         width: 187px;
@@ -126,7 +128,6 @@ h1 {
             & img {
                 padding-left: 8px;
             }
-
         }
         &:hover {
             background: #007EFF;
@@ -148,8 +149,13 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     &-block {
-        flex: 0 0 255px;
-        padding: 20px 19px 23px 19px;
+        flex: 1 0 255px;
+        @media (max-width: 1000px) {
+            flex: 1 0 300px;
+        }
+        padding: 20px 18px 23px 18px;
+        border: 1px solid #E8E8E8;
+        cursor:default;
         &:hover {
             box-shadow: 0px 0px 20px rgba(37, 40, 43, 0.2);
         }
@@ -210,6 +216,7 @@ main{
         flex: 1 1 100%;
         background: #F9F9FA;
         border: 1px solid #E8E8E8;
+        cursor: pointer;
         & button {
             padding: 15px 0;
             font-size: 16px;
@@ -217,8 +224,45 @@ main{
             color: #25282B;
             background: inherit;
         }
+        &:active {
+            box-shadow: 2px 2px #E8E8E8;
+        }
     }
     &__pagination{
         padding: 30px 0 200px 0;
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 130%;
+        color: #25282B;
+        & span {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin: 0 5px;
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            cursor: pointer;
+            &:nth-child(2) {
+                background: #E93C3C;
+                color: #FFFFFF;
+            }
+            &:nth-child(5) {
+                color:#A0A4A8;
+            }
+            &:nth-child(6) {
+                color:#E93C3C;
+            }
+            &:hover {
+                background: #E93C3C;
+                color: #FFFFFF; 
+            }
+        }
+        & a:last-child{
+            transform: rotate(180deg);
+        }
+
     }
 }   

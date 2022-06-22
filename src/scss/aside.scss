@@ -3,8 +3,11 @@
     flex: 0 0 232px;
     background: #F9F9FA;
     border: 1px solid #E8E8E8;
-    padding: 30px 20px;
+    padding: 30px 20px 70px 20px;
     height: 100%;
+    @media (max-width: 875px) {
+        display: none;
+    }
     &-container {
         max-width: 216px;
     }
