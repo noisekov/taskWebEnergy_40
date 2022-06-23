@@ -11,6 +11,19 @@
     &-container {
         max-width: 216px;
     }
+    &-view{
+        position: relative;
+        &::after{
+            display: block;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #E8E8E8;
+        }
+    }
     &-slider{
         position: relative;
         padding-bottom: 30px;
@@ -49,8 +62,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;    
-            & p {
+            margin-bottom: 20px; 
+            cursor: pointer;   
+            & span {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 130%;
@@ -90,15 +104,12 @@
     }
     &-checkbox{
         font-family: 'Arial';
+        padding-bottom: 30px;
         & form {
             display: flex;
             align-items: center;
             margin-bottom: 12px;
-            & input {
-                cursor: pointer;
-            }
             & label {
-                padding-left: 12px;
                 line-height: 20px;
                 color: #52575C;
                 &:hover{
@@ -107,6 +118,34 @@
                 }
             }
         }
+        &_custom {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        &_custom+label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+          }
+        &_custom+label::before {
+        content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            background: #FFFFFF;
+            border: 1px solid #E8E8E8;
+            border-radius: 2px;
+
+        }
+        &_custom:checked+label::before {
+            border-color: #E93C3C;
+            background: #E93C3C;
+            background-image: url(/img/Check.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
 
     }
 }
