@@ -30,6 +30,9 @@ main {
 //nav-page
 .nav-page__shop {
     padding: 39px 50px 50px 50px;
+    @media (max-width:550px) {
+        display: none;
+    }
     & ul {
         display: flex;
         align-items: center;
@@ -107,34 +110,64 @@ h1 {
     }
 }
 // filter-price
-.filter-price {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 20px;
-    & ul {
-        position: absolute;
-        width: 187px;
-        z-index: 2;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    }
-    & li {
-        text-align: left;
-        line-height: 130%;
-        color: #52575C;
-        padding: 6px 0 6px 11px;
-        & a {
-            color: #52575C;
-            & img {
-                padding-left: 8px;
+.filter-block{
+    &__price {  
+        position: relative;
+        margin-bottom: 32px;
+        & ul {
+            position: absolute;
+            top: 0;
+            right: 45px;
+            width: 187px;
+            z-index: 2;
+            background: #FFFFFF;
+            &:hover{
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            }
+            @media (max-width: 875px) {
+                left: 45px;
+            }
+            @media (max-width: 550px) {
+                left: 5px;
             }
         }
-        &:hover {
-            background: #007EFF;
-            cursor: pointer;
+        & li {
+            text-align: left;
+            line-height: 130%;
+            color: #52575C;
+            padding: 6px 0 6px 11px;
             & a {
-                color: #FFFFFF;
-            } 
+                color: #52575C;
+                & img {
+                    padding-left: 8px;
+                }
+            }
+            &:hover {
+                background: #007EFF;
+                cursor: pointer;
+                & a {
+                    color: #FFFFFF;
+                } 
+            }
+        }
+    }
+    &__filter{
+        align-items: center;
+        margin-bottom: 17px;
+        display: none;
+        @media (max-width: 875px) {
+            display: block;
+            float: right;
+            margin-bottom: 32px;
+        }
+        & button {
+            background: inherit;
+        }
+        & button {
+            font-size: 16px;
+            line-height: 130%;
+            color: #25282B;
+            margin-left: 10px;
         }
     }
 }
@@ -150,14 +183,13 @@ main{
     flex-wrap: wrap;
     &-block {
         flex: 1 0 255px;
-        @media (max-width: 1000px) {
-            flex: 1 0 300px;
-        }
         padding: 20px 18px 23px 18px;
         border: 1px solid #E8E8E8;
-        cursor:default;
         &:hover {
             box-shadow: 0px 0px 20px rgba(37, 40, 43, 0.2);
+        }
+        @media (max-width: 1000px) {
+            flex: 1 0 300px;
         }
         &__body {
             display: flex;
