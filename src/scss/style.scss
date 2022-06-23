@@ -3,6 +3,7 @@
 @import "footer";
 @import "header";
 @import "aside";
+@import "size";
 html, body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
@@ -62,11 +63,16 @@ h1 {
     color: #25282B;
     margin-bottom: 30px;
 }
+
+//
 .category {
     margin-bottom: 2px;
     &__list {
         display: flex;
         flex-wrap: wrap;
+        &-hidden .active {
+            display: none;
+        }
         & li {
             margin-right: 8px;
             padding: 8.5px 8px;
@@ -181,6 +187,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
     &-block {
         flex: 1 0 255px;
         padding: 20px 18px 23px 18px;
@@ -297,4 +304,7 @@ main{
         }
 
     }
-}   
+}  
+
+
+

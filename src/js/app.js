@@ -6,7 +6,7 @@ import Swiper, { Navigation, Pagination } from "swiper";
 
 const swiper = new Swiper();
 
-//slider
+// slider
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
@@ -17,3 +17,5 @@ noUiSlider.create(slider, {
         'max': 100
     }
 });
+
+
