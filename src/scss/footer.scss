@@ -158,17 +158,39 @@ footer {
             }
         }
         .allow {
-            & input {
-                float: left;
-            }
             & label {
                 display: flex;
-                flex: 0 0 274px;
                 font-size: 12px;
                 line-height: 130%;
                 color: #A0A4A8;
-                padding-left: 10px;
             }
+            &-input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+            &-input+label {
+                user-select: none;
+                user-select: none;
+              }
+            &-input+label::before {
+                content: '';
+                display: inline-flex;
+                width: 13px;
+                height: 13px;
+                margin-right: 12px;
+                background: #FFFFFF;
+                border: 1px solid #E8E8E8;
+                border-radius: 2px;
+    
+            }
+            &-input:checked+label::before {
+                border-color: #007EFF;
+                background: #007EFF;
+                background-image: url(/img/Check-footer.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+              }
         }        
     }
     &-down{

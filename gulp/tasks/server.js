@@ -4,6 +4,6 @@ export const server = (done) => {
             baseDir: `${app.path.build.html}`
         },
         notify: false,//message in browser (true)
-        port: 4000,
+        port: 3000,
     });
 }

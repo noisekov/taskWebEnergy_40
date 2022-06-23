@@ -89,6 +89,7 @@
                 @media (max-width: 1250px) {
                     display: none;
                 }
+
                 .header-down__nav-list_honest {
                     font-weight: 500;
                     line-height: 130%;
@@ -146,6 +147,14 @@
                 }
             }
         }
+    }
+}
+.down-logo {
+    width: 79px;
+    height: 50px;
+    display: none;
+    @media (max-width: 550px) {
+        display: block;
     }
 }
 .wrapper__header-down{
