@@ -15,12 +15,14 @@
   "license": "MIT",
   "dependencies": {
     "gulp-cli": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "nouislider": "^15.6.0"
   },
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
     "fs": "latest",
+    "gh-pages": "^4.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-build": "latest",

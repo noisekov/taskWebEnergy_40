@@ -4,7 +4,6 @@ import notify from "gulp-notify";// Сообщения (подсказки)
 import browsersync from "browser-sync";// Локальный сервер
 import newer from 'gulp-newer'; //check обновления 
 import ifPlugin from 'gulp-if';//Условное ветвление
-import noUiSlider from 'nouislider';//Рэйндж слайдер
 
 //export object
 export const plugins = {
@@ -14,5 +13,4 @@ export const plugins = {
     browsersync: browsersync,
     newer: newer,
     if: ifPlugin,
-    noUiSlider:noUiSlider
 }
