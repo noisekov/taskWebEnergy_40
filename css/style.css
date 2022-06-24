@@ -336,7 +336,7 @@ footer {
 .footer-top .allow-input:checked + label::before {
   border-color: #007EFF;
   background: #007EFF;
-  background-image: url(/img/bluecheck.svg);
+  background-image: url(img/bluecheck.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -696,7 +696,7 @@ footer {
 .filter-checkbox_custom:checked + label::before {
   border-color: #E93C3C;
   background: #E93C3C;
-  background-image: url(/img/check.svg);
+  background-image: url(img/check.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
