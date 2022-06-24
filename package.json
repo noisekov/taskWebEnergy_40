@@ -23,7 +23,7 @@
     "del": "latest",
     "fs": "latest",
     "gh-pages": "^4.0.0",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-build": "latest",
     "gulp-clean-css": "latest",

@@ -1,19 +1,10 @@
 //Основной модуль
-
 import gulp from "gulp";
 //import modules
 import {path} from "./gulp/config/path.js";
 //import общих плагинов 
 import {plugins} from "./gulp/config/plugins.js";
-//gh-pages
-const ghPages = require('gh-pages');
-const path = require('path');
 
-function deploy(cb) {
-    ghPages.publish(path.join(process.cwd(), './build'), cb);
-  }
-  exports.deploy = deploy;
-  
 //передаем значения в глобальную переменную 
 global.app = {
     isBuild: process.argv.includes('--build'),
@@ -22,6 +13,7 @@ global.app = {
     gulp: gulp,
     plugins: plugins
 }
+
 //import задач
 import { copy } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
