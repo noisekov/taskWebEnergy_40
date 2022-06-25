@@ -67,11 +67,27 @@ h1 {
 //
 .category {
     margin-bottom: 2px;
+    & button {
+        font-size: 12px;
+        line-height: 14px;
+        height: 35px;
+        padding: 0 8px;
+        color: #52575C;
+        border-radius: 2px;
+        background: #FFFFFF;
+        border: 1px solid #E93C3C;
+        &:hover {
+            color: #E93C3C;
+        }
+    }
     &__list {
         display: flex;
         flex-wrap: wrap;
-        &-hidden .active {
+        &_hidden{
             display: none;
+        }
+        &_show {
+            display: block;
         }
         & li {
             margin-right: 8px;
@@ -97,22 +113,6 @@ h1 {
             line-height: 14px;
             color: #52575C;
         }
-        & button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            line-height: 14px;
-            height: 33.5px;
-            padding: 0 8px;
-            color: #52575C;
-            border-radius: 2px;
-            background: #FFFFFF;
-            border: 1px solid #E93C3C;
-            &:hover {
-                color: #E93C3C;
-            }
-        };
     }
 }
 // filter-price
