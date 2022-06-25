@@ -44,3 +44,21 @@ function showBtn(e) {
         hiddenBtn.classList.remove('category__list_show');
      }
 }
+
+//show-size-block
+const basketBtn = document.querySelector("#js-show-size");
+document.addEventListener("click", showSizeBlock)
+
+function showSizeBlock(event) {
+    if(event.target.closest("#js-show-size")) {
+        document.querySelector(".size").style.display = 'block';
+    }
+}
+//close-size-block
+const closeSize = document.querySelector("#js-close-size-block");
+document.addEventListener("click", closeBlockSize)
+
+function closeBlockSize(e) {
+    if (e.target.closest("#js-close-size-block"))
+    document.querySelector(".size").style.display = "none"
+}

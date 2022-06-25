@@ -184,10 +184,10 @@ main{
 }
 //selling
 .selling {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
     &-block {
         flex: 1 0 255px;
         padding: 20px 18px 23px 18px;
