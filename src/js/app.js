@@ -6,18 +6,6 @@ import Swiper, { Navigation, Pagination } from "swiper";
 
 const swiper = new Swiper();
 
-// slider
-// var slider = document.getElementById('slider');
-
-// noUiSlider.create(slider, {
-//     start: [20, 80],
-//     connect: true,
-//     range: {
-//         'min': 0,
-//         'max': 100
-//     }
-// });
-
 // category__list
 const showList = document.querySelector("#js-show-btn");
 const hiddenBtn = document.querySelector("#js-hidden-btn");
@@ -87,3 +75,18 @@ function priceShow (e) {
         }
     }
 }
+
+// slider
+// import noUiSlider from 'nouislider';
+// import 'nouislider/dist/nouislider.css';
+
+// var slider = document.getElementById('slider');
+
+// noUiSlider.create(slider, {
+//     start: [20, 80],
+//     connect: true,
+//     range: {
+//         'min': 0,
+//         'max': 100
+//     }
+// });

@@ -4,6 +4,7 @@
 @import "header";
 @import "aside";
 @import "size";
+
 html, body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
@@ -125,7 +126,7 @@ h1 {
         }
         & ul {
             position: absolute;
-            top: -1px;
+            top: -5px;
             right: 50px;
             width: 187px;
             z-index: 2;
