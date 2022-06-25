@@ -149,3 +149,10 @@
 
     }
 }
+
+.filter.\show-filter {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+}

@@ -62,3 +62,28 @@ function closeBlockSize(e) {
     if (e.target.closest("#js-close-size-block"))
     document.querySelector(".size").style.display = "none"
 }
+
+
+//show-filter
+const showFilter = document.querySelector("#show-filter");
+document.addEventListener("click", showFilterblock);
+
+function showFilterblock (e) {
+    if(e.target.closest("#show-filter")){
+        document.querySelector(".filter").classList.toggle("show-filter");
+        document.querySelector(".filter").style.height = "auto"
+    } 
+}
+
+
+///filter-block__price-hidden
+const priceList = document.querySelectorAll(".filter-block__price_hidden");
+document.addEventListener("click", priceShow) 
+
+function priceShow (e) {
+    if (e.target.closest("#js-show-all-list")){
+        for (let i = 0; i < priceList.length; i++){
+            priceList[i].classList.toggle("filter-block__price_hidden")
+        }
+    }
+}

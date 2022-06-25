@@ -120,10 +120,13 @@ h1 {
     &__price {  
         position: relative;
         margin-bottom: 32px;
+        &_hidden {
+            display: none;
+        }
         & ul {
             position: absolute;
-            top: 0;
-            right: 45px;
+            top: -1px;
+            right: 50px;
             width: 187px;
             z-index: 2;
             background: #FFFFFF;
@@ -142,7 +145,8 @@ h1 {
             line-height: 130%;
             color: #52575C;
             padding: 6px 0 6px 11px;
-            & a {
+            & button {
+                background: inherit;
                 color: #52575C;
                 & img {
                     padding-left: 8px;
@@ -151,7 +155,7 @@ h1 {
             &:hover {
                 background: #007EFF;
                 cursor: pointer;
-                & a {
+                & button {
                     color: #FFFFFF;
                 } 
             }
