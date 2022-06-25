@@ -924,12 +924,28 @@ h1 {
 .category {
   margin-bottom: 2px;
 }
+.category button {
+  font-size: 12px;
+  line-height: 14px;
+  height: 35px;
+  padding: 0 8px;
+  color: #52575C;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #E93C3C;
+}
+.category button:hover {
+  color: #E93C3C;
+}
 .category__list {
   display: flex;
   flex-wrap: wrap;
 }
-.category__list-hidden .active {
+.category__list_hidden {
   display: none;
+}
+.category__list_show {
+  display: block;
 }
 .category__list li {
   margin-right: 8px;
@@ -954,22 +970,6 @@ h1 {
   font-size: 12px;
   line-height: 14px;
   color: #52575C;
-}
-.category__list button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  line-height: 14px;
-  height: 33.5px;
-  padding: 0 8px;
-  color: #52575C;
-  border-radius: 2px;
-  background: #FFFFFF;
-  border: 1px solid #E93C3C;
-}
-.category__list button:hover {
-  color: #E93C3C;
 }
 
 .filter-block__price {
