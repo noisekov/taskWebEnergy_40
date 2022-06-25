@@ -701,6 +701,13 @@ footer {
   background-position: center center;
 }
 
+.filter.show-filter {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  right: 50px;
+}
+
 .size {
   display: none;
   width: 320px;
@@ -1004,17 +1011,18 @@ h1 {
   color: #52575C;
   padding: 6px 0 6px 11px;
 }
-.filter-block__price li a {
+.filter-block__price li button {
+  background: inherit;
   color: #52575C;
 }
-.filter-block__price li a img {
+.filter-block__price li button img {
   padding-left: 8px;
 }
 .filter-block__price li:hover {
   background: #007EFF;
   cursor: pointer;
 }
-.filter-block__price li:hover a {
+.filter-block__price li:hover button {
   color: #FFFFFF;
 }
 .filter-block__filter {
