@@ -984,10 +984,13 @@ h1 {
   position: relative;
   margin-bottom: 32px;
 }
+.filter-block__price_hidden {
+  display: none;
+}
 .filter-block__price ul {
   position: absolute;
-  top: 0;
-  right: 45px;
+  top: -1px;
+  right: 50px;
   width: 187px;
   z-index: 2;
   background: #FFFFFF;
