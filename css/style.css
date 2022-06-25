@@ -702,6 +702,7 @@ footer {
 }
 
 .size {
+  display: none;
   width: 320px;
   position: absolute;
   top: 0px;
@@ -1044,10 +1045,10 @@ main {
 }
 
 .selling {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  position: relative;
 }
 .selling-block {
   flex: 1 0 255px;
