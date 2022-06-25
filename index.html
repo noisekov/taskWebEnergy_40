@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="nouislider.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
@@ -154,7 +153,10 @@
                     </div>
                 </form>
             </div>
-            <div id="slider"></div>
+            <div >
+                <input type="range" id="slider" aria-valuemax="100000" aria-valuemin="0" name="slider" class="range-slider">
+                <!-- <input type="range" id="slider" value="0" aria-valuemax="100000" aria-valuemin="0" name="slider" class="range"> -->
+            </div>
         </div>
         <div class="filter-view">
             <div class="filter-slider__price">
@@ -897,7 +899,6 @@
     </div>
 </footer>
         </div>
-        <script src="nouislider.js"></script>
         <script src="js/app.min.js"></script>
     </body>
 </html>
