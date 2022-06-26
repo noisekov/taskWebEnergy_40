@@ -30,28 +30,59 @@ main {
     flex: 0 1 auto;
 }
 //nav-page
-.nav-page__shop {
-    padding: 39px 50px 50px 50px;
-    @media (max-width:550px) {
-        display: none;
-    }
-    & ul {
-        display: flex;
-        align-items: center;
-    }
-    & li {
-        margin-right: 6px;
-        color: #828282;
-        &:last-child {
-            margin-right: 0;
+.nav-page{
+    &__shop {
+        padding: 39px 50px 50px 50px;
+        @media (max-width:550px) {
+            display: none;
+        }
+        & ul {
+            display: flex;
+            align-items: center;
+        }
+        & li {
+            margin-right: 6px;
+            color: #828282;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        & a {
+            line-height: 130%;
+            color: #828282;
+            &:hover {
+                border-bottom: 1px solid #828282;
+                opacity: 0.9;
+            }
         }
     }
-    & a {
-        line-height: 130%;
-        color: #828282;
-        &:hover {
-            border-bottom: 1px solid #828282;
-            opacity: 0.9;
+    &__back{
+        padding: 39px 50px 50px 44px;
+        position: relative;
+        @media (min-width:550px) {
+            display: none;
+        }
+        & ul {
+            display: flex;
+            align-items: center;
+        }
+        & li::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 39px;
+            left: 15px;
+            background-image: url(../img/down.svg);
+        }
+        & a {
+            font-size: 16px;
+            line-height: 130%;
+            color: #E93C3C;
+            &:hover {
+                opacity: 0.9;
+            }
         }
     }
 }
@@ -68,6 +99,7 @@ h1 {
 //
 .category {
     margin-bottom: 2px;
+    margin-bottom: 15px;
     & button {
         font-size: 12px;
         line-height: 14px;
@@ -77,7 +109,7 @@ h1 {
         border-radius: 2px;
         background: #FFFFFF;
         border: 1px solid #E93C3C;
-        margin-bottom: 5px;
+        
         &:hover {
             color: #E93C3C;
         }
