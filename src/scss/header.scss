@@ -83,6 +83,7 @@
         &__nav{
             display: flex;
             align-items: center;
+            position: relative;
             &-list{
                 display: flex;
                 line-height: 130%;
@@ -102,6 +103,9 @@
                     &:hover{
                         border-bottom: 2px solid #E93C3C;
                     }
+                }
+                &.\.hiddenMenu {
+                    display: none;
                 }
             }
             &-catalog{
@@ -147,6 +151,40 @@
                 }
             }
         }
+    }
+    &__burger {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: #E93C3C;
+        z-index: 5;
+        width: 200px;
+        &-list{
+            display: flex;
+            flex-direction: column;
+            line-height: 130%;
+            .header-down__nav-list_honest {
+                font-weight: 500;
+                line-height: 130%;
+                text-transform: uppercase;
+            }
+            & li {
+                border-bottom: 2px solid #FFFFFF;
+                padding: 10px 15px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.6;
+                }
+
+            }
+            & a {
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__burger.\.active-burger{
+        display: block;
     }
 }
 .down-logo {

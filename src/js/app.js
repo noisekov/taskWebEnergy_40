@@ -147,3 +147,16 @@ window.addEventListener("resize", function() {
 //         'max': 100
 //     }
 // });
+
+//showBurgerMenu
+
+const hiddenBurgerMenu = document.querySelector(".header-down__nav-list");
+const burgerMenu = document.querySelector(".header__burger");
+document.addEventListener("click", burgerFunc)
+
+function burgerFunc (e) {
+    if (e.target.closest("#show-burger-menu")) {
+        burgerMenu.classList.toggle(".active-burger");
+        hiddenBurgerMenu.classList.toggle(".hiddenMenu");
+    } 
+}
