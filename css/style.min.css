@@ -1195,6 +1195,15 @@ main {
   background: #E93C3C;
   color: #FFFFFF;
 }
+@media (max-width: 875px) {
+  .selling-block__btn button:first-child {
+    background: #E93C3C;
+    color: #FFFFFF;
+  }
+  .selling-block__btn button:first-child:hover {
+    opacity: 0.8;
+  }
+}
 .selling-block__btn button:last-child {
   background: inherit;
   padding: 10px 20px;
