@@ -157,6 +157,34 @@
     left:0 ;
     top: 0;
 }
+.filter-block-exit{
+    display: none;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 257px;
+        width: 50px;
+        height: 50px;
+        background: #EB4747;
+        cursor: pointer;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 270px;
+        height: 24px;
+        width: 24px;
+        z-index: 12;
+        background: url(../img/xafter.svg);
+        cursor: pointer;
+    }
+}
+.filter-block-exit.\_active{
+    display: block;
+}
+
 
 .range-slider {
     margin-top: 20px;

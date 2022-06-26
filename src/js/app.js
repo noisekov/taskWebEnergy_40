@@ -59,8 +59,18 @@ document.addEventListener("click", showFilterblock);
 function showFilterblock (e) {
     if(e.target.closest("#show-filter")){
         document.querySelector(".filter").classList.toggle("show-filter");
+        document.querySelector(".filter-block-exit").classList.toggle("_active")
         document.querySelector(".filter").style.height = "auto"
     } 
+}
+//btnClose
+document.addEventListener("click", btnClose)
+
+function btnClose (e) {
+    if (e.target.closest(".filter-block-exit")){
+        document.querySelector(".filter").classList.remove("show-filter"); 
+        document.querySelector(".filter-block-exit").classList.toggle("_active")
+    }
 }
 
 
@@ -75,6 +85,53 @@ function priceShow (e) {
         }
     }
 }
+
+
+//show-mores
+const showAllBlocks = document.querySelector("#js-show-more");
+const hiddenMobileBlock =  document.querySelectorAll(".hidden-for-mobile-screen");
+document.addEventListener("click", funShowBlock)
+
+function funShowBlock (e) {
+    if (e.target.closest("#js-show-more")) {
+        for (let i = 0; i < hiddenMobileBlock.length; i++){
+            hiddenMobileBlock[i].style.display = 'block'
+        }
+    }
+}
+
+//try to add class category__list
+const categoryLiElement10 = document.querySelector(".category__list").children[10]
+const categoryLiElement9 = document.querySelector(".category__list").children[9]
+const categoryLiElement8 = document.querySelector(".category__list").children[8]
+const categoryLiElement7 = document.querySelector(".category__list").children[7]
+const categoryLiElement6 = document.querySelector(".category__list").children[6]
+const categoryLiElement5 = document.querySelector(".category__list").children[5]
+const categoryLiElement4 = document.querySelector(".category__list").children[4]
+window.addEventListener("resize", function() {
+    if (window.innerWidth < 750) {
+        categoryLiElement10.classList.add("category__list_hidden");
+        categoryLiElement9.classList.add("category__list_hidden");
+        categoryLiElement8.classList.add("category__list_hidden");
+    } else {
+        categoryLiElement10.classList.remove("category__list_hidden");
+        categoryLiElement9.classList.remove("category__list_hidden");
+        categoryLiElement8.classList.remove("category__list_hidden");
+    }
+});
+window.addEventListener("resize", function() {
+    if (window.innerWidth < 400) {
+        categoryLiElement7.classList.add("category__list_hidden");
+        categoryLiElement6.classList.add("category__list_hidden");
+        categoryLiElement5.classList.add("category__list_hidden");
+        categoryLiElement4.classList.add("category__list_hidden");
+    } else {
+        categoryLiElement7.classList.remove("category__list_hidden");
+        categoryLiElement6.classList.remove("category__list_hidden");
+        categoryLiElement5.classList.remove("category__list_hidden");
+        categoryLiElement4.classList.remove("category__list_hidden");
+    }
+});
 
 // slider
 // import noUiSlider from 'nouislider';
