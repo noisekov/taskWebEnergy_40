@@ -974,6 +974,7 @@ h1 {
   border-radius: 2px;
   background: #FFFFFF;
   border: 1px solid #E93C3C;
+  margin-bottom: 5px;
 }
 .category button:hover {
   color: #E93C3C;
