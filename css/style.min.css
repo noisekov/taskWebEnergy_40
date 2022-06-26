@@ -952,6 +952,37 @@ main {
   border-bottom: 1px solid #828282;
   opacity: 0.9;
 }
+.nav-page__back {
+  padding: 39px 50px 50px 44px;
+  position: relative;
+}
+@media (min-width: 550px) {
+  .nav-page__back {
+    display: none;
+  }
+}
+.nav-page__back ul {
+  display: flex;
+  align-items: center;
+}
+.nav-page__back li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 39px;
+  left: 15px;
+  background-image: url(../img/down.svg);
+}
+.nav-page__back a {
+  font-size: 16px;
+  line-height: 130%;
+  color: #E93C3C;
+}
+.nav-page__back a:hover {
+  opacity: 0.9;
+}
 
 h1 {
   font-size: 32px;
@@ -964,6 +995,7 @@ h1 {
 
 .category {
   margin-bottom: 2px;
+  margin-bottom: 15px;
 }
 .category button {
   font-size: 12px;
@@ -974,7 +1006,6 @@ h1 {
   border-radius: 2px;
   background: #FFFFFF;
   border: 1px solid #E93C3C;
-  margin-bottom: 5px;
 }
 .category button:hover {
   color: #E93C3C;
