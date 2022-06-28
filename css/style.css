@@ -1205,6 +1205,9 @@ main {
     flex: 1 0 300px;
   }
 }
+.selling-block img {
+  width: 100%;
+}
 .selling-block__body {
   display: flex;
   flex-direction: column;
