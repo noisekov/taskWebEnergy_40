@@ -10,7 +10,6 @@ const swiper = new Swiper();
 const showList = document.querySelector("#js-show-btn");
 const hiddenBtn = document.querySelector("#js-hidden-btn");
 const hiddenList = document.querySelectorAll('.category__list_hidden')
-
 document.addEventListener("click", showBtn)
 function showBtn(e) {
     if(e.target.closest("#js-show-btn")) {
